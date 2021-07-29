@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DistribucionesWM</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <h1>DistribucionesWM</h1>
+   <fieldset> <legend>Inventario</legend>
+    <form action="" method="post" enctype="text/plain">
+        <ul>
+         <li>
+            Fecha: <input id="fecha" type="date" style="width: 11.3pc">
+         </li>
+         <br>
+         <li>
+            Cantidad: <input id="cantidad" type="number" style="width: 9.9pc">
+         </li>
+         <br>
+         <li>
+            Cervezas: <select id="productos" style="width: 10.3pc">
+                <option value="value0" selected>...........</option>
+                <option value="value1">Coronita</option> 
+                <option value="value2">Aguila litro</option>
+                <option value="value3">Heineken</option>
+              </select>
+         </li>
+         <br>
+         <li>
+            Valor total: <input id="precio" type="text" style="width: 9.3pc" placeholder="$...">
+         </li>
+         <br>
+         <li>
+            Pago: <select id="Pago" style="width: 12pc">
+               <option value="si" selected>Si</option>
+               <option value="no">No</option>
+               </select>
+         </li>
+         <br>
+         <li>
+            Observaciones: <br/>
+            <textarea id="observacion" rows="4" cols="30" placeholder="Escriba algo..."></textarea>
+         </li>
+         <br>
+         <button id="submit" type="submit" class="btn btn-primary">Enviar</button>
+        </ul>
+       </form>
+</fieldset>
+<script src="..\form.js"></script>
+</body>
+</html>
